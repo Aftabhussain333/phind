@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-container {
+            margin: 20px;
+        }
+        .form-container h2 {
+            margin-bottom: 10px;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container input, .form-container select {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .available-cars {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .car-card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .car-card img {
+            width: 100%;
+            height: auto;
+        }
+        .rent-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Rental Company</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+    </nav>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="apple-product.jpg" alt="Apple Product">
+            <h2>Apple Product</h2>
+            <p>Description of the Apple product.</p>
+        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+    <div class="form-container">
+        <h2>Rent a Car</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <select name="car">
+                <option value="">Select a Car</option>
+                <option value="car1">Car 1</option>
+                <option value="car2">Car 2</option>
+            </select>
+            <input type="submit" value="Rent It">
+        </form>
+    </div>
+    <div class="available-cars">
+        <div class="car-card">
+            <img src="car1.jpg" alt="Car 1">
+            <h3>Car 1</h3>
+            <p>Details about Car 1.</p>
+            <button class="rent-button">Rent It</button>
+        </div>
+        <!-- Add more car cards as needed -->
+    </div>
+    <footer>
+        &copy; 2023 Car Rental Company. All rights reserved.
+    </footer>
+</body>
+</html>
